@@ -479,5 +479,5 @@ app.use(function(err,req,res,next){
 app.set('port', process.env.PORT || 3000);
 
 app.listen(app.get('port'), function(){
-	console.log('Server port shttp://localhost:'+ app.get('port')+';press Ctrl-C to terminate');
+	console.log('Server port http://localhost:'+ app.get('port')+';press Ctrl-C to terminate');
 });
