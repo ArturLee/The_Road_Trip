@@ -1,0 +1,51 @@
+<link href="css/profile.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src='js\\profile.js'></script>
+<section id="background">
+    <div id="title">
+                    <h1>Profile</h1>
+                </div>
+    <div id="demitovr">
+        <div class="account">
+            <b class="nome">{{name}} </b><br/>
+            <div class="Posts">
+                <h5 class="red">Score</h5>
+                <h5>{{place}}</h5>
+            </div>
+             <div class="Posts">
+                <h5 class="red">Distance</h5>
+                <h5>{{distance}} km</h5>
+            </div>
+            <div class="Posts">
+                <h5 class="red">Money</h5>
+                <h5>{{money}} $</h5>
+            </div>
+            <div class="Posts">
+                <h5 class="red">Vehicles</h5>
+                <h5>{{vehicles}}</h5>
+            </div>
+        </div>
+        <div class="feed">
+                 <h1> Lederboard</h1>
+            <table>
+                <tr>
+                    <td>Place</td>
+                    <td>Username</td>
+                    <td>Score</td>
+                    <td>Distance</td>
+                    <td>Money</td>
+                    <td>Vehicles</td>
+                </tr>
+        {{#each player}}
+                <tr>
+                    <td>{{this.place}}</td>
+                    <td>{{this.name}}</td>
+                    <td>{{this.score}}</td>
+                    <td>{{this.distance}}</td>
+                    <td>{{this.money}}</td>
+                    <td>{{this.vehicles}}</td>
+                </tr>
+        {{/each}}
+            </table>
+        </div>
+    </div>
+</section>

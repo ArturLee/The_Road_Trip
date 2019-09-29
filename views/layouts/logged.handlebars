@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+			<title>The Road Trip - GAME-</title>
+            <link rel="icon" type="images/png" href="images/logoTRT.png" size="32x32">
+			<link href="css/HomePage.css" rel="stylesheet" type="text/css"/>
+            <script type="text/javascript" src='js/profile.js'></script>
+                        <script src="dist/sweetalert2.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="dist/sweetalert2.min.css">
+ 
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">
+<a href="Home">TM2017</a>
+</div> 
+                <div class="menu">
+                    <nav id="menu_nav">
+                        <ul class="menu_main">
+                            <li><a href="Home" title="">Home</a></li>
+                            <li><a href="concept" title="">Concept</a></li>
+                            <li><a href="News" title="">News</a></li>
+                            <li><a href="forum" title="">Forum</a></li>
+                            <li><a href="profile" title="">Play!</a></li>
+                            <li class="login bar dropmysh"><a href="javascript:dropdown()">{{name}}</a>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="profile">Profile</a><!--javascript:openpro()-->
+                                  <a href="javascript:openfeed()">Feedback</a>
+                                  <a href="javascript:openset()">Settings</a>
+                                  <a href="/logout">Logout</a>
+                                  </div>
+                                </li>
+                                <div id="myprofile" class="modal">
+                                      <div class="modal-content">
+                                          <a href="javascript:closepro()" class="close" >&times;</a>
+                                          <h1 id="title"> Profile Settings</h1><br>
+                                          <form>
+                                          <p>Change display name</p>
+                                          <input type="text" name="idname" placeholder="Display name">
+                                          <p>Change profile picture</p>
+                                          <input type="file" onchange="previewFile()"><br>
+                                          <img src="" height="200" alt="Image preview...">
+                                          <input class="button button1" type="button" value="submit">
+                                          </div>
+                                        </form>
+                                      </div>
+                                <div id="myfeedback" class="modal">
+                                        <div class="modal-content">
+                                          <a href="javascript:closefeed()" class="close" >&times;</a>
+                                          <h1 id="title"> Feedback</h1><br>
+                                          <p>Messages</p><br>
+                                          <p>Reports Historic</p>
+                                        </div>
+                                      </div>
+                                <div id="mysettings" class="modal">
+                                        <div class="modal-content">
+                                          <a href="javascript:closeset()" class="close" >&times;</a>
+                                          <h1 id="title"> Account Settings</h1><br>
+                                          <p>Change e-mail</p><br>
+                                          <p><a href="javascript:opencp()"> Change Password</a></p><br>
+                                          <p><a href="/delete"> Delete Account</a></p>
+                                        </div>
+                                <div id="changepass" class="modal">
+                                <div class="modal-content">
+                                  <a href="javascript:closecp()" class="close" >&times;</a>
+                                  <h1 id="title">Change Password</h1><br>
+                                  <form method="post" action="/change-password">
+                                  <input type="Password" name="oldpass" placeholder="oldpass">
+                                  <input type="Password" name="newpass" placeholder="newpass">
+                                  <input type="Password" name="newpassmatch" placeholder="confirm pass">
+                                  <button class="button button1" type="Submit">Change</button>
+                                  </form>
+                                  </div>
+
+                                </div>
+                                      </div>
+                            <li class="login"><a href="/logout" title="">Logout</a></li> 
+                        </ul>
+                    </nav>
+                </div>
+			</header>
+			{{{body}}}
+            <footer>
+  <p style="text-align: center; font-family:efont2"> The Road Trip - Game ®</p>
+</footer>
+</body>
+</html>

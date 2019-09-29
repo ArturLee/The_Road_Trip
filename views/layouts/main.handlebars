@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+			<title>The Road Trip - GAME-</title>
+            <link rel="icon" type="images/png" href="images/logoTRT.png" size="32x32">
+			<link href="css/HomePage.css" rel="stylesheet" type="text/css"/>
+            <script type="text/javascript" src='js/homepage.js'></script>
+            <script src="dist/sweetalert2.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="dist/sweetalert2.min.css">
+ 
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">
+<a href="Home">TM2017</a>
+</div> 
+                <div class="menu">
+                    <nav id="menu_nav">
+                        <ul class="menu_main">
+                            <li><a href="Home" title="">Home</a></li>
+                            <li><a href="concept" title="">Concept</a></li>
+                            <li><a href="News" title="">News</a></li>
+                            <li><a href="forum" title="">Forum</a></li>
+                            <li><a href="index" title="">Play!</a></li>
+                            <li class="login bar"><a href="javascript:openlogin()">Login</a></li>
+                            
+                            <div id="mylogin" class="modal">
+                                <div class="modal-content">
+                                <h1 id="titlee"> Login </h1>
+                                    <form method="post" action="/login">
+                                    <input type="email" placeholder="Email" name="email"><br>
+                                    <input type="Password" placeholder="Password" name="password"><br>
+                                    <i style="font-family: efont2; margin: auto;"> Remeber me </i><label class="switch"><input type="checkbox"><div class="slider round"></div></label>
+                                    <button class="button button1" type="Submit">Login</button> <br>
+                                    <input class="button button1" type="button" value="Forgot Password"/><br>
+                                    <a href="javascript:openregis()"><input class="button button1" type="button" value="Register"></a>
+                                        </form>
+                                    </div>
+                            </div>
+                            <div id="myregis" class="modal">
+                                <div class="modal-content">
+                                <h1 id="titlee"> Register </h1>
+                                    <form method="post" action="/sublime">
+                                    <input type="username" placeholder="Username" name="username"><br>
+                                    <input type="text" placeholder="Display Name" name="name">
+                                    <input type="email" placeholder="E-mail" name="email"><br>
+                                    <input type="password" placeholder="Password" name="password"><br>
+                                    <input type="password" placeholder="Confirm Password" name="passwordMatch"><br>
+                                    <p style="font-family: efont2" >By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                                    <button class="button button1" type="Submit" value="Submit">Register</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+			</header>
+            
+			{{{body}}}
+            <footer>
+  <p style="text-align: center; font-family:efont2"> The Road Trip - Game ®</p>
+</footer>
+</body>
+</html>

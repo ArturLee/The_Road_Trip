@@ -1,0 +1,36 @@
+<link href="css/news.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src='js\\news.js'></script>
+<section id="background">
+    <!--<div class="sombra_no_topo"></div>-->
+    <div id="title">
+        <h1>News</h1>
+    </div>
+    <div id="search">
+        <form action="/search" method="post">
+        <input type="text" name="look" placeholder="Search..."></form>
+        <br/>
+        <br/>
+        <h4 class="left">Categories :</h4>
+        <ul class="cat">
+            <li class="active" onclick="calsec(this)">All</li>                            
+            <li class="nselc" onclick="calsec(this)">Announcements</li>                            
+            <li class="nselc" onclick="calsec(this)">Community News</li>                            
+            <li class="nselc" onclick="calsec(this)">What ever man</li>                            
+            <li class="nselc" onclick="calsec(this)">Version Release</li>                            
+            <li class="nselc" onclick="calsec(this)">Events</li>                                                     
+        </ul>
+    </div>
+    <div id="demitovr">
+    {{#each news}}
+       <a href="{{this.link}}"> 
+       <div class="box box1">
+            <div class="boxtext">
+                <hr>
+                    <h1>{{this.title}}</h1>
+                <hr>
+            </div>
+        </div>
+        </a>
+    {{/each}}
+    </div>
+</section>

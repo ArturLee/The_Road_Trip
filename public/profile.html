@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+    <html>
+        
+        <head>
+            <meta charset="utf-8">
+            <title>The Road Trip -GAME-</title>
+            <link rel="icon" type="image/png" href="image/logoTRT.png" size="32x32">
+            <link href="css/profile.css" rel="stylesheet" type="text/css"/>
+            <script type="text/javascript" src='js\\profile.js'></script>
+        </head>
+        <body>
+            <header>   
+                <div class="logo">
+                    <a href="HomePage.html">TM2017</a>
+                </div>        
+                <div class="menu">
+                    <nav id="menu_nav">
+                        <ul class="menu_main">
+                            <li><a href="HomePage.html" title="">Home</a></li>
+                            <li><a href="concept.html" title="">Concept</a></li>
+                            <li><a href="News.html" title="">News</a></li>
+                            <li><a href="forum.html" title="">Forum</a></li>
+                            <li><a href="#" title="">Play!</a></li>
+                            <li class="login bar dropmysh"><a href="javascript:dropdown()">MyAccount</a>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="javascript:openpro()">Profile</a>
+                                  <a href="javascript:openfeed()">Feedback</a>
+                                  <a href="javascript:openset()">Settings</a>
+                                  <a href="login.html">Logout</a>
+                                  </div>
+                                </li>
+                                <div id="myprofile" class="modal">
+                                      <div class="modal-content">
+                                          <a href="javascript:closepro()" class="close" >&times;</a>
+                                          <h1 id="title"> Profile Settings</h1><br>
+                                          <form>
+                                          <p>Change display name</p>
+                                          <input type="text" name="idname" placeholder="Display name">
+                                          <p>Change profile picture</p>
+                                          <input type="file" onchange="previewFile()"><br>
+                                          <img src="" height="200" alt="Image preview...">
+                                          <input class="button button1" type="button" value="submit">
+                                          </div>
+                                        </form>
+                                      </div>
+                                <div id="myfeedback" class="modal">
+                                        <div class="modal-content">
+                                          <a href="javascript:closefeed()" class="close" >&times;</a>
+                                          <h1 id="title"> Feedback</h1><br>
+                                          <p>Messages</p><br>
+                                          <p>Reports Historic</p>
+                                        </div>
+                                      </div>
+                                <div id="mysettings" class="modal">
+                                        <div class="modal-content">
+                                          <a href="javascript:closeset()" class="close" >&times;</a>
+                                          <h1 id="title"> Account Settings</h1><br>
+                                          <p>Change e-mail</p><br>
+                                          <p>Change Password</p><br>
+                                          <p>Delete Account</p>
+                                        </div>
+                                      </div>
+                            <li class="login"><a href="login.html" title="">Logout</a></li>               
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section id="background">
+                <!--<div class="sombra_no_topo"></div>-->
+                <div id="demitovr">
+                    <div class="account">
+                        <img class="profile_img" src="image/artur.jpg"><br/>
+                        <b class="nome">Artur Lee </b><br/>
+                         <div class="Posts">
+                            <h5 class="red">Days</h5>
+                            <h5>0 Days</h5>
+                        </div>
+                         <div class="Posts">
+                            <h5 class="red">Distance</h5>
+                            <h5>0 Km</h5>
+                        </div>
+                    </div>
+                    <div class="feed">
+                             <h1> Lederboard</h1>
+                        <table>
+                            <tr>
+                                <td>Place</td>
+                                <td>Username</td>
+                                <td>Score</td>
+                                <td>Kms</td>
+                                <td>Money</td>
+                                <td>Vehicles</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dillon</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Tiago</td>
+                                 <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Martin</td>
+                                 <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <th>Artur</th>
+                                 <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Dillon</td>
+                                 <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Martin</td>
+                                 <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Tiago</td>
+                                 <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Dillon</td>
+                                 <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Martin</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>Tiago</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Dillon</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Martin</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </body>
+    </html>

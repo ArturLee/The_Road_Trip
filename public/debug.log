@@ -1,0 +1,6 @@
+[0511/202648:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Acesso negado. (0x5)
+[0511/202648:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: O encaminhamento (pipe) foi terminado. (0x6D)
+[0511/202648:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Acesso negado. (0x5)
+[0511/220230:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Acesso negado. (0x5)
+[0511/220230:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: O encaminhamento (pipe) foi terminado. (0x6D)
+[0511/220230:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Acesso negado. (0x5)

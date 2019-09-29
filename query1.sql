@@ -1,0 +1,1 @@
+select * from TRT.users order by Score desc;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>The Road Trip -GAME-</title>
+            <link rel="icon" type="image/png" href="image/logoTRT.png" size="32x32">
+			<link href="css/HomePage.css" rel="stylesheet" type="text/css"/>
+            <script type="text/javascript" src='js\\homepage.js'></script>
+		</head>
+		<body>
+			<header>
+                <div class="menu">
+                    <nav id="menu_nav">
+                        <ul class="menu_main">
+                            <li><a href="HomePage.html" title="">Home</a></li>
+                            <li><a href="concept.html" title="">Concept</a></li>
+                            <li><a href="News.html" title="">News</a></li>
+                            <li><a href="forum.html" title="">Forum</a></li>
+                            <li><a href="index.html" title="">Play!</a></li>
+                            <li class="login bar"><a href="javascript:openlogin()">Login</a></li>
+                            
+                            <div id="mylogin" class="modal">
+                                <div class="modal-content">
+                                <h1 id="title"> Login </h1>
+                                    <form>
+                                    <input type="username" placeholder="Username" name="username"><br>
+                                    <input type="Password" placeholder="Password" name="password"><br>
+                                    <input type="checkbox" checked="checked"> Remember me
+                                    <a href="profile.html"><input class="button button1" type="button" value="Login"></a><br>
+                                    <input class="button button1" type="submit" value="Forgot Password"/><br>
+                                    <a href="javascript:openregis()"><input class="button button1" type="button" value="Register"></a>
+                                        </form>
+                                    </div>
+                            </div>
+                            <div id="myregis" class="modal">
+                                <div class="modal-content">
+                                <h1 id="title"> Regist </h1>
+                                    <form>
+                                    <input type="username" placeholder="Username" name="username"><br>
+                                    <input type="text" placeholder="Display Name" name="first_name">
+                                    <input type="email" placeholder="E-mail" name="email"><br>
+                                    <input type="Password" placeholder="Password" name="password"><br>
+                                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                                    <a href="javascript:closeregis()"><input class="button button1" type="button" value="Submit"></a>
+                                    </form>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+			</header>
+			<section id="home-page">
+			   	<!--<div class="sombra_no_topo"></div>-->
+			   	<div class="homepage">
+				   			<!--<img src="image/logo.png"><br/>-->
+				   			<a href="login.html"><input type="button" class="button button1" value="Play!"/></a>
+			   	</div>
+			</section>
+		</body>
+	</html>
