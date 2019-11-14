@@ -11,4 +11,5 @@ The road trip is a web base game, in which users can create accounts, add friend
 - ExpressJS
 - MySQL
 - User Authentication
-
+- Photoshop
+- Illustrator
